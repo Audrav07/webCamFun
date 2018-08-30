@@ -1,6 +1,6 @@
 # Webcam Fun
 
-#Objective
+# Objective
 In this exercise, I made a photobooth with javaScript. There is a 'Take Photo' button to call the takePhoto() function on click event. Input elements to change the RGB on the screen. The video is being piped into a canvas element. Once the canvas element has the video then you can start taking photos and even download them.
 
 We use the MediaDevices getUserMedia() method to request video and camera access.  
@@ -12,7 +12,7 @@ const ctx = canvas.getContext('2d');
 const strip = document.querySelector('.strip');
 const snap = document.querySelector('.snap');``
 
-##Get Video
+## Get Video
 Get video function
 
 ``function getVideo() {
@@ -27,7 +27,7 @@ Get video function
     });
 }``
 
-##Paint to Canvas
+## Paint to Canvas
 A frame from video and paint it to the cavas on the page
 
 ```
