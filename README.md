@@ -1,5 +1,7 @@
 # Webcam Fun
 
+Run npm install & npm start
+
 # Objective
 In this exercise, I made a photobooth with javaScript. There is a 'Take Photo' button to call the takePhoto() function on click event. Input elements to change the RGB on the screen. The video is being piped into a canvas element. Once the canvas element has the video then you can start taking photos and even download them.
 
@@ -52,5 +54,18 @@ function paintToCanvas() {
   }, 16);
 }
 ```
+## Take Photo
+```
 
+function takePhoto() {
+  snap.currentTime = 0;
+  snap.play();
 
+  const data = canvas.toDataURL('image/jpeg');
+  const link = document.createElement('a');
+  link.href = data;
+  link.setAttribute('download', 'pretty');
+  link.innerHTML = `<img src="${data}" alt="You look great" />`;
+  strip.insertBefore(link, strip.firsChild);
+}
+```
