@@ -44,8 +44,8 @@ function takePhoto() {
   const data = canvas.toDataURL('image/jpeg');
   const link = document.createElement('a');
   link.href = data;
-  link.setAttribute('download', 'handsome');
-  link.innerHTML = `<img src="${data}" alt="Handsome Man" />`;
+  link.setAttribute('download', 'pretty');
+  link.innerHTML = `<img src="${data}" alt="You look great" />`;
   strip.insertBefore(link, strip.firsChild);
 }
 
