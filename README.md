@@ -30,7 +30,8 @@ Get video function
 ##Paint to Canvas
 A frame from video and paint it to the cavas on the page
 
-``` function paintToCanvas() {
+```
+function paintToCanvas() {
   const width = video.videoWidth;
   const height = video.videoHeight;
   canvas.width = width;
