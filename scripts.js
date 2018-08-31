@@ -45,7 +45,7 @@ function takePhoto() {
   const link = document.createElement('a');
   link.href = data;
   link.setAttribute('download', 'pretty');
-  link.innerHTML = `<img src="${data}" alt="You look great" />`;
+  link.innerHTML = `<img src="${data}" alt="You look good" />`;
   strip.insertBefore(link, strip.firsChild);
 }
 

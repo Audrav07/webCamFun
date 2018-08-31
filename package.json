@@ -9,9 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "2.23.2"
+    "browser-sync": "^2.24.7"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Audrav07/webCamFun.git"
